@@ -17,7 +17,7 @@ function changeHeart(target) {
       target.innerText = FULL_HEART;
       target.classList.add('activated-heart')
     }
-    
+
   }
 }
 function turnHeartsEmpty(target) {
