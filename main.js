@@ -5,8 +5,8 @@ const FULL_HEART = '♥'
 // Your JavaScript code goes here!
 
 let errorModal = document.querySelector('#modal')
-let errorModal = document.querySelector('#modal')
-like
+let likeBtns = document.querySelector('.like')
+
 errorModal.classList.add('hidden')
 
 //------------------------------------------------------------------------------
