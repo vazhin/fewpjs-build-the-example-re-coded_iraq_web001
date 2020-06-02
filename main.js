@@ -20,7 +20,7 @@ function turnHeartsFull(target) {
 function turnHeartsEmpty(target) {
   for (heart of hearts){
     target.innerText = EMPTY_HEART;
-    target.classList.add('activated-heart')
+    target.classList.remove('activated-heart')
   }
 }
 
