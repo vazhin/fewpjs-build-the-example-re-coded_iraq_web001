@@ -11,17 +11,17 @@ let hearts = document.querySelectorAll('.like-glyph')
 
 hideModal()
 
-function turnHeartsFull() {
+function turnHeartsFull(target) {
   for (heart of hearts){
-    heart.innerText = FULL_HEART;
+    target.innerText = FULL_HEART;
   }
 }
 
 for (btn of likeBtns) {
-  btn.addEventListener('click', () => {
+  btn.addEventListener('click', (e) => {
     mimicServerCall()
       .then(() => {
-        turnHeartsFull()
+        turnHeartsFull(e.target)
       })
       .catch((error) => {
         errorModal.classList.remove('hidden')
