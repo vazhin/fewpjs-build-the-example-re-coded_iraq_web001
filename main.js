@@ -14,6 +14,7 @@ hideModal()
 function turnHeartsFull(target) {
   for (heart of hearts){
     target.innerText = FULL_HEART;
+    target.classList.add('activated-heart')
   }
 }
 
