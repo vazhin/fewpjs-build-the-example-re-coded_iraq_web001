@@ -11,7 +11,7 @@ let hearts = document.querySelectorAll('.like-glyph')
 
 hideModal()
 
-function turnHeartsFull(target) {
+function changeHeart(target) {
   for (heart of hearts){
     target.innerText = FULL_HEART;
     target.classList.add('activated-heart')
