@@ -11,6 +11,12 @@ let hearts = document.querySelectorAll('.like-glyph')
 
 hideModal()
 
+function turnHeartsFull() {
+  for (heart of hearts){
+    heart.innerText = FULL_HEART;
+  }
+}
+
 for (btn of likeBtns) {
   btn.addEventListener('click', () => {
     mimicServerCall()
