@@ -19,7 +19,7 @@ for (btn of likeBtns) {
         modalMessage.innerText = error
         setTimeout()
 
-        
+
       })
   })
 }
