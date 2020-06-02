@@ -17,7 +17,7 @@ for (btn of likeBtns) {
       .catch((error) => {
         errorModal.classList.remove('hidden')
         modalMessage.innerText = error
-        setTimeout(hideModal, 5000)
+        setTimeout(hideModal, 5000);
       })
   })
 }
