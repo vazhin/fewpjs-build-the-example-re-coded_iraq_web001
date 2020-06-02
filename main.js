@@ -5,6 +5,7 @@ const FULL_HEART = '♥'
 // Your JavaScript code goes here!
 
 let errorModal = document.querySelector('#modal')
+let modalMessage = document.querySelector('#modal-message')
 let likeBtns = document.querySelectorAll('.like')
 
 errorModal.classList.add('hidden')
@@ -13,8 +14,9 @@ for (btn of likeBtns) {
   btn.addEventListener('click', () => {
     mimicServerCall()
       .then(() => {})
-      .catch(() => {
+      .catch((error) => {
         errorModal.classList.remove('hidden')
+        errorModal.inner
       })
   })
 }
