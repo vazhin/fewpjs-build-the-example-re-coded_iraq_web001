@@ -18,14 +18,12 @@ for (btn of likeBtns) {
         errorModal.classList.remove('hidden')
         modalMessage.innerText = error
         setTimeout(hideModal, 5000)
-
-
       })
   })
 }
 
 function hideModal() {
-  errorModal.classList.add('hidden')
+  errorModal.classList.add('hidden');
 }
 
 //------------------------------------------------------------------------------
