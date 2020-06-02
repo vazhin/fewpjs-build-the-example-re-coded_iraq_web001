@@ -17,11 +17,18 @@ function turnHeartsFull(target) {
     target.classList.add('activated-heart')
   }
 }
+function turnHeartsEmpty(target) {
+  for (heart of hearts){
+    target.innerText = FULL_HEART;
+    target.classList.add('activated-heart')
+  }
+}
 
 for (btn of likeBtns) {
   btn.addEventListener('click', (e) => {
     mimicServerCall()
       .then(() => {
+        if 
         turnHeartsFull(e.target)
       })
       .catch((error) => {
