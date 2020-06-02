@@ -8,7 +8,7 @@ let errorModal = document.querySelector('#modal')
 let modalMessage = document.querySelector('#modal-message')
 let likeBtns = document.querySelectorAll('.like')
 
-errorModal.classList.add('hidden')
+hideModal()
 
 for (btn of likeBtns) {
   btn.addEventListener('click', () => {
@@ -17,8 +17,15 @@ for (btn of likeBtns) {
       .catch((error) => {
         errorModal.classList.remove('hidden')
         modalMessage.innerText = error
+        setTimeout()
+
+        
       })
   })
+}
+
+function hideModal() {
+  errorModal.classList.add('hidden')
 }
 
 //------------------------------------------------------------------------------
