@@ -28,7 +28,7 @@ for (btn of likeBtns) {
   btn.addEventListener('click', (e) => {
     mimicServerCall()
       .then(() => {
-        if 
+        if
         turnHeartsFull(e.target)
       })
       .catch((error) => {
