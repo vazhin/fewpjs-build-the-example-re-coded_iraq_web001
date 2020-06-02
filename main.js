@@ -6,7 +6,7 @@ const FULL_HEART = '♥'
 window.addEventListener('DOMContentLoaded', () => {
 
   let errorModal = document.querySelector('#modal')
-  errorModal.classList.remove('hidden')
+  errorModal.classList.add('hidden')
 
 })
 
