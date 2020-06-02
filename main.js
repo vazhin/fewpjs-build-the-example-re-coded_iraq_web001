@@ -16,7 +16,7 @@ for (btn of likeBtns) {
       .then(() => {})
       .catch((error) => {
         errorModal.classList.remove('hidden')
-        errorModal.inner
+        modalMessage.innerText =
       })
   })
 }
