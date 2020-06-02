@@ -16,14 +16,10 @@ function changeHeart(target) {
     if (target.innerText == EMPTY_HEART) {
       target.innerText = FULL_HEART;
       target.classList.add('activated-heart')
+    } else {
+      target.innerText = EMPTY_HEART;
+      target.classList.remove('activated-heart')
     }
-
-  }
-}
-function turnHeartsEmpty(target) {
-  for (heart of hearts){
-    target.innerText = EMPTY_HEART;
-    target.classList.remove('activated-heart')
   }
 }
 
