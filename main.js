@@ -5,9 +5,15 @@ const FULL_HEART = '♥'
 // Your JavaScript code goes here!
 
 let errorModal = document.querySelector('#modal')
-let likeBtns = document.querySelector('.like')
+let likeBtns = document.querySelectorAll('.like')
 
 errorModal.classList.add('hidden')
+
+for (btn of likeBtns) {
+  btn.addEventListener('click', () => {
+    mimicServerCall();
+  })
+}
 
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
