@@ -13,8 +13,11 @@ hideModal()
 
 function changeHeart(target) {
   for (heart of hearts){
-    target.innerText = FULL_HEART;
-    target.classList.add('activated-heart')
+    if (target.innerText == EMPTY_HEART) {
+      target.innerText = FULL_HEART;
+      target.classList.add('activated-heart')
+    }
+    
   }
 }
 function turnHeartsEmpty(target) {
