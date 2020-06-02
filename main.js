@@ -21,7 +21,7 @@ for (btn of likeBtns) {
   btn.addEventListener('click', () => {
     mimicServerCall()
       .then(() => {
-
+        turnHeartsFull()
       })
       .catch((error) => {
         errorModal.classList.remove('hidden')
