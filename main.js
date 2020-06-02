@@ -11,7 +11,11 @@ errorModal.classList.add('hidden')
 
 for (btn of likeBtns) {
   btn.addEventListener('click', () => {
-    mimicServerCall();
+    mimicServerCall()
+      .then(() => {})
+      .catch(() => {
+        errorModal.classList.remove('hidden')
+      })
   })
 }
 
